@@ -29,7 +29,8 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ vars.DOCKERHUB_USERNAME }}/react-docker-app:latest+${{ github.head_commit.title}}
+          ${{ vars.DOCKERHUB_USERNAME }}/react-docker-app:latest_info:+${{ github.head_commit.title}}
+          ${{ vars.DOCKERHUB_USERNAME }}/react-docker-app:latest
         labels: |
           org.opencontainers.image.title=React Docker App
           org.opencontainers.image.description=${{ github.event.head_commit.message }}
