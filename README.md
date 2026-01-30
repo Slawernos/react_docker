@@ -60,7 +60,50 @@ docker run -d -p 80:80 --name my-react-app react-docker-app
 
 ```bash
 docker stop my-react-app
+```
+
+#### Start the Container Again
+
+```bash
+docker start my-react-app
+```
+
+#### View Container Logs
+
+```bash
+docker logs my-react-app
+```
+
+#### View Running Containers
+
+```bash
+docker ps
+```
+
+#### Remove the Container
+
+```bash
 docker rm my-react-app
+```
+
+Note: Stop the container first before removing it.
+
+#### Stop All Running Containers
+
+```bash
+docker stop $(docker ps -q)
+```
+
+#### Remove All Stopped Containers
+
+```bash
+docker rm $(docker ps -a -q)
+```
+
+#### Clean Up (Remove Unused Images, Containers, Networks)
+
+```bash
+docker system prune -a
 ```
 
 ## 📦 Docker Build Explained
