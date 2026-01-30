@@ -45,6 +45,7 @@ function App() {
             <h3>Welcome to Your Devops Dashboard</h3>
             <h4>We are building something great!</h4>
             <b>Testing Docker with React</b>
+            <a href="https://reactjs.org/">Learn more about React</a>
             <p>This is a simple dashboard template built with React and Docker. Start coding and make it your own!</p>
           </div>
         </main>
