@@ -31,5 +31,13 @@ jobs:
         tags: |
           ${{ vars.DOCKERHUB_USERNAME }}/react-docker-app:latest
           ${{ vars.DOCKERHUB_USERNAME }}/react-docker-app:${{ github.sha }}
+        labels: |
+          org.opencontainers.image.title=React Docker App
+          org.opencontainers.image.description=${{ github.event.head_commit.message }}
+          org.opencontainers.image.source=${{ github.repositoryUrl }}
+          org.opencontainers.image.revision=${{ github.sha }}
+          org.opencontainers.image.created=${{ github.event.head_commit.timestamp }}
+          commit.message=${{ github.event.head_commit.message }}
+          commit.author=${{ github.event.head_commit.author.name }}
         cache-from: type=registry,ref=${{ vars.DOCKERHUB_USERNAME }}/react-docker-app:latest
         cache-to: type=inline
