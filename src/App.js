@@ -43,6 +43,7 @@ function App() {
           
           <div className="welcome-section">
             <h3>Welcome to Your Devops Dashboard</h3>
+            <h4>We are building something great!</h4>
             <p>This is a simple dashboard template built with React and Docker. Start coding and make it your own!</p>
           </div>
         </main>
