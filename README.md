@@ -34,6 +34,24 @@ npm start
 
 ### 🐳 Running with Docker
 
+#### Option 1: Pull from Docker Hub (Easiest)
+
+The latest version is available on Docker Hub: [slawernos/react-docker-app](https://hub.docker.com/r/slawernos/react-docker-app)
+
+1. **Pull the image:**
+```bash
+docker pull slawernos/react-docker-app:latest
+```
+
+2. **Run the container:**
+```bash
+docker run -d -p 80:80 --name my-react-app slawernos/react-docker-app:latest
+```
+
+3. **Open your browser:** Visit [http://localhost](http://localhost) 🎉
+
+#### Option 2: Build Locally
+
 #### Build the Docker Image
 
 ```bash
